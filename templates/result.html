@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .result-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #ccc;
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h1>Estimated Car Price</h1>
+        <p><strong>₹ {{ price }}</strong></p>
+        <p><em>Model Accuracy: {{ accuracy }}%</em></p>
+        <a href="/">🔙 Predict another</a>
+    </div>
+</body>
+</html>

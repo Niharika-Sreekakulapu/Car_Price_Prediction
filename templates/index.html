@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Price Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/predict" method="post">
+        <h1>Car Price Predictor</h1>
+        <label>Year:</label>
+        <input type="number" name="year" required>
+
+        <label>KM Driven:</label>
+        <input type="number" name="km_driven" required>
+
+        <label>Fuel Type:</label>
+        <select name="fuel" required>
+            <option value="0">CNG</option>
+            <option value="1">Diesel</option>
+            <option value="2">LPG</option>
+            <option value="3">Petrol</option>
+        </select>
+
+        <label>Seller Type:</label>
+        <select name="seller_type" required>
+            <option value="0">Dealer</option>
+            <option value="1">Individual</option>
+            <option value="2">Trustmark Dealer</option>
+        </select>
+
+        <label>Transmission:</label>
+        <select name="transmission" required>
+            <option value="0">Automatic</option>
+            <option value="1">Manual</option>
+        </select>
+
+        <label>Owner:</label>
+        <select name="owner" required>
+            <option value="0">First Owner</option>
+            <option value="1">Second Owner</option>
+            <option value="2">Third Owner</option>
+            <option value="3">Fourth & Above</option>
+            <option value="4">Test Drive Car</option>
+        </select>
+
+        <label>Mileage (km/l or km/kg):</label>
+        <input type="text" name="mileage" required>
+
+        <label>Engine (cc):</label>
+        <input type="text" name="engine" required>
+
+        <label>Max Power (bhp):</label>
+        <input type="text" name="max_power" required>
+
+        <label>Seats:</label>
+        <input type="number" name="seats" required>
+
+        <input type="submit" value="Predict Price">
+    </form>
+</body>
+</html>

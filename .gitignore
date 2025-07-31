@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pkl
+*.docx
+*.save
+*.DS_Store
+accuracy.txt
+output.docx

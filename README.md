@@ -16,36 +16,10 @@ A deep learning-based web app that predicts the price of a used car based on var
 - HTML/CSS (Jinja2 templates)
 
 ## 📁 Project Structure
-ML/
-├── pycache/
-│ ├── app.cpython-311.pyc
-│ └── cars.cpython-311.pyc
-├── model/
-│ └── car_price_model.h5
-├── templates/
-│ ├── index.html
-│ └── result.html
-├── .gitignore
-├── accuracy.txt
-├── app.py
-├── cardekho.csv
-├── cars.py
-├── le_fuel.save
-├── le_owner.save
-├── le_seller_type.save
-├── le_seller.save
-├── le_trans.save
-├── le_transmission.save
-├── output.docx
-├── README.md
-├── requirements.txt
-├── scaler.save
-├── scaler_X.save
-└── scaler_y.save
-
+![Project Structure](project_structure.png)
 📸 Demo
 ![Car Price Prediction UI](input_form.png)
-![Car Price Prediction UI](output.png.png)
+![Car Price Prediction UI](output.png)
 
 👩‍💻 Author
 Niharika Sreekakulapu
